@@ -1,0 +1,15 @@
+:root{
+    /* Colors */
+    --primary-color: #664237;
+    --secondary-color: #553328;
+    --terciary-color: #fff;
+    --text-primary: #fff;
+    --text-secondary: #533126;
+    --text-terciary: #A26756;
+    --opacity-bg: rgba(0,0,0, 0.5);
+    /* Radius */
+    --radius-1: 16px;
+    --radius-2: 24px;
+    --radius-3: 40px;
+    --radius-circle: 99px;
+}

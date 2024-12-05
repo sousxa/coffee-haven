@@ -1,0 +1,13 @@
+.welcome{
+    width: auto;
+    height: auto;
+    background-color: grey;
+    padding: 16px;
+}
+
+.content-welcome{
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--opacity-bg);
+
+}

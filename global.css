@@ -1,0 +1,10 @@
+@import url("./styles/welcome.css");
+@import url("./styles/variables.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
