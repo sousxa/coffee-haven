@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="global.css">
+    <link rel="shortcut icon" href="./assets/coffee-haven-white.svg" type="image/x-icon">
     <title>Coffee Haven</title>
 </head>
 <body>
@@ -12,26 +16,37 @@
         <main class="content-welcome">
             <header class="header">
                 <nav class="navbar">
-                    <img class="logo-nav" src="" alt="">
-                    <ul>
+                    <img class="logo-nav" src="./assets/coffee-haven-white.svg" alt="">
+                    <ul class="nav-menus">
                         <li class="nav-menu">About us</li>
                         <li class="nav-menu">Our Coffee</li>
                         <li class="nav-menu">Subscription</li>
                         <li class="nav-menu">Contact</li>
                         <li class="nav-menu">FAQ</li>
-                        <li class="nav-menu-login"></li>
+                        <li class="nav-menu-login"> <i data-lucide="user-round" class="icon-login"></i></li>
                     </ul>
                 </nav>
             </header>
-            <div class="title-welcome">
-                <h1 class="titleP">Coffee Haven</h1>
-                <h2 class="subP">Discover the Best Specialty Coffee</h2>
+            <div class="title-container">
+                <div class="title-welcome">
+                    <h1 class="title-p">
+                        <span><i>Coffee</i></span> 
+                        <span><i>Haven</i></span>
+                    </h1>
+                    <h2 class="sub-p">Discover the Best Specialty Coffee</h2>
+                </div>
                 <div class="cta-welcome">
                     <a href="" class="btn-ghost">Explore</a>
                     <a href="" class="btn-fill">Subscribe Now</a>
                 </div>
             </div>
+            <div class="bg-welcome"></div>
         </main>
     </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

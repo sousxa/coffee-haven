@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    opacity: 0;
+    animation: .5s swift-up ease-out forwards, .5s fade-in ease-out forwards;
+    animation-delay: 1s;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gp-8) var(--gp-20) var(--gp-8) var(--gp-16);
+}
+
+.logo-nav{
+    width: 64px;
+}
+
+.nav-menus{
+    display: flex;
+    align-items: center;
+    gap: var(--gp-24);
+}
+
+.nav-menu{
+    color: var(--text-color-primary);
+    font: var(--fsize-20);
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nav-menu:hover{
+    transform: scale(1.05);
+}
+
+.nav-menu-login{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--terciary-color);
+    border-radius: var(--radius-circle);
+    cursor: pointer;
+}
+
+.icon-login{
+    color: var(--primary-color);
+    stroke-width: 2.5px;
+}

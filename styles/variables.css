@@ -3,13 +3,40 @@
     --primary-color: #664237;
     --secondary-color: #553328;
     --terciary-color: #fff;
-    --text-primary: #fff;
-    --text-secondary: #533126;
-    --text-terciary: #A26756;
+    --text-color-primary: #fff;
+    --text-color-secondary: #533126;
+    --text-color-terciary: #A26756;
     --opacity-bg: rgba(0,0,0, 0.5);
+
+    /* Border */
+    --border-primary: 2px solid var(--secondary-color);
+    --border-secondary: 2px solid var(--terciary-color);
+
     /* Radius */
     --radius-1: 16px;
     --radius-2: 24px;
     --radius-3: 40px;
     --radius-circle: 99px;
+
+    /* Font size */
+    --fsize-96: normal normal bold 6rem/7.2rem "Lexend", sans-serif;
+    --fsize-40: normal normal bold 2.5rem/2.7rem "Lexend", sans-serif;
+    --fsize-32: normal normal medium 2rem/2.7rem "Lexend", sans-serif;
+    --fsize-28: normal normal 600 1.75rem/2.1rem "Lexend", sans-serif;
+    --fsize-24: normal normal 600 1.5rem/1.75rem "Lexend", sans-serif;
+    --fsize-20: normal normal normal 1.25rem/1.5rem "Lexend", sans-serif;
+    --fsize-18: normal normal normal 1.125rem/1.575rem "Lexend", sans-serif;
+    --fsize-16: normal normal normal 1rem/1.75rem "Lexend", sans-serif;
+    --fsize-14: normal normal normal 0.875rem/1.05rem "Lexend", sans-serif;
+
+    /* Gap&Padding */
+    --gp-86:86px;
+    --gp-64:64px;
+    --gp-48:48px;
+    --gp-24:24px;
+    --gp-20:20px;
+    --gp-16:16px;
+    --gp-8:8px;
+    --gp-4:4px;
+    --btn-default: 10px 24px 10px 24px;
 }

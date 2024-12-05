@@ -1,6 +1,6 @@
 @import url("./styles/welcome.css");
 @import url("./styles/variables.css");
-
+@import url("./styles/header.css");
 * {
     margin: 0;
     padding: 0;
