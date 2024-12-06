@@ -14,12 +14,14 @@
     padding: var(--gp-16);
     align-items: center;
     background-color: var(--secondary-color);
-    animation: 25s slide infinite linear;
+    animation: 35s slide infinite linear;
 }
 
 .placard-text{
     font: var(--fsize-24);
-    text-wrap: nowrap;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
     color: var(--text-color-primary);
 }
 
