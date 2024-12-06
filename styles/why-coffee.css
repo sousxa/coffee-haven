@@ -1,0 +1,28 @@
+.why-coffee{
+    display: flex;
+    flex-direction: column;
+    padding: var(--gp-86) var(--gp-64);
+    gap: var(--gp-48);
+}
+
+.why-title{
+    font: var(--fsize-40);
+    width: 465px;
+    color: var(--text-color-secondary);
+}
+
+.why-content{
+    display: flex;
+    gap: var(--gp-48);
+}
+
+.why-img{
+    width: 450px;
+    border-radius: var(--radius-3);
+}
+
+.why-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gp-48) var(--gp-64);
+}

@@ -16,14 +16,14 @@
         <main class="content-welcome">
             <header class="header">
                 <nav class="navbar">
-                    <img class="logo-nav" src="./assets/coffee-haven-white.svg" alt="">
+                    <img class="logo-nav" src="./assets/coffee-haven-white.svg" alt="Coffee Beans Enterprise Logo">
                     <ul class="nav-menus">
                         <li class="nav-menu">About us</li>
                         <li class="nav-menu">Our Coffee</li>
                         <li class="nav-menu">Subscription</li>
                         <li class="nav-menu">Contact</li>
                         <li class="nav-menu">FAQ</li>
-                        <li class="nav-menu-login"> <i data-lucide="user-round" class="icon-login"></i></li>
+                        <li class="nav-menu-login"> <i data-lucide="user-round" class="icon-login" alt="Person icon representing login"></i></li>
                     </ul>
                 </nav>
             </header>
@@ -43,10 +43,55 @@
             <div class="bg-welcome"></div>
         </main>
     </section>
+    <div class="placard">
+        <div class="placard-content">
+            <img class="placard-vetor" src="./assets/coffee-bean.svg" alt="Coffee Bean">
+            <span class="placard-text">Quality in Every Sip</span>
+            <img class="placard-vetor" src="./assets/cup-bean.svg" alt="Cup Coffee">
+            <span class="placard-text">Your Ideal Coffee</span>
+            <img class="placard-vetor" src="./assets/coffee-bean.svg" alt="Coffee Bean">
+            <span class="placard-text">Gourmet Experience</span>
+            <img class="placard-vetor" src="./assets/cup-bean.svg" alt="Cup Coffee">
+            <span class="placard-text">Indulge</span>
+            <img class="placard-vetor" src="./assets/coffee-bean.svg" alt="Coffee Bean">
+            <span class="placard-text">Passion in Every Grain</span>
+            <img class="placard-vetor" src="./assets/cup-bean.svg" alt="Cup Coffee">
+            <span class="placard-text">The Best Coffee Bean</span>
+        </div>
+    </div>
+    <section class="why-coffee">
+        <h1 class="why-title">Why Our Coffee is More Than Just Coffee</h1>
+        <main class="why-content">
+            <img class="why-img" src="./assets/why-our-coffee.png" alt="">
+            <div class="why-grid">
+                <div class="why-box">
+                    <h3 class="why-titlebox">Lorem Ipsum</h3>
+                    <p class="why-descbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo nulla repellat fugiat voluptates dolores odit odio. Modi ipsa id nam consectetur dolor nobis iusto aut. Magni dolorum cumque voluptatem.</p>
+                </div>
+                <div class="why-box">
+                    <h3 class="why-titlebox">Lorem Ipsum</h3>
+                    <p class="why-descbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo nulla repellat fugiat voluptates dolores odit odio. Modi ipsa id nam consectetur dolor nobis iusto aut. Magni dolorum cumque voluptatem.</p>
+                </div>
+                <div class="why-box">
+                    <h3 class="why-titlebox">Lorem Ipsum</h3>
+                    <p class="why-descbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo nulla repellat fugiat voluptates dolores odit odio. Modi ipsa id nam consectetur dolor nobis iusto aut. Magni dolorum cumque voluptatem.</p>
+                </div>
+                <div class="why-box">
+                    <h3 class="why-titlebox">Lorem Ipsum</h3>
+                    <p class="why-descbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo nulla repellat fugiat voluptates dolores odit odio. Modi ipsa id nam consectetur dolor nobis iusto aut. Magni dolorum cumque voluptatem.</p>
+                </div>
+            </div>
+        </main>
 
+    </section>
+
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
+    /* Carousel */
+    var copy = document.querySelector(".placard-content").cloneNode(true);
+    document.querySelector(".placard").appendChild(copy);
   </script>
 </body>
 </html>

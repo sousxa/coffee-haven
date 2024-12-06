@@ -1,0 +1,37 @@
+.placard{
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+.placard-content{
+    width:fit-content;
+    height: 100px;
+    display: flex;
+    gap: var(--gp-48);
+    padding: var(--gp-16);
+    align-items: center;
+    background-color: var(--secondary-color);
+    animation: 25s slide infinite linear;
+}
+
+.placard-text{
+    font: var(--fsize-24);
+    text-wrap: nowrap;
+    color: var(--text-color-primary);
+}
+
+.placard-vetor{
+    height: 36px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    } 
+    to{
+        transform: translateX(-100%);
+    }
+}
