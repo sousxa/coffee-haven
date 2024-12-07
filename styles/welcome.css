@@ -49,6 +49,9 @@
     color: var(--text-color-primary);
     font: var(--fsize-96);
     height: 115.2px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 650;
+    letter-spacing: -3px; 
 }
 
 .title-p span{
@@ -118,6 +121,11 @@
 .content-welcome:hover .bg-welcome{
   filter: brightness(0.3);
   transform: scale(1.1);
+}
+
+.content-welcome:hover .title-p{
+  font-variation-settings: "wght" 750; 
+  letter-spacing: 1.5px;
 }
 
 .btn-ghost:hover{

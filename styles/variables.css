@@ -21,7 +21,7 @@
     /* Font size */
     --fsize-96: normal normal bold 6rem/7.2rem "Lexend", sans-serif;
     --fsize-40: normal normal bold 2.5rem/2.7rem "Lexend", sans-serif;
-    --fsize-32: normal normal medium 2rem/2.7rem "Lexend", sans-serif;
+    --fsize-32: normal normal 500 2rem/2.7rem "Lexend", sans-serif;
     --fsize-28: normal normal 600 1.75rem/2.1rem "Lexend", sans-serif;
     --fsize-24: normal normal 600 1.5rem/1.75rem "Lexend", sans-serif;
     --fsize-20: normal normal normal 1.25rem/1.5rem "Lexend", sans-serif;
