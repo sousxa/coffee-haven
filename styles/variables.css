@@ -40,3 +40,50 @@
     --gp-4:4px;
     --btn-default: 10px 24px 10px 24px;
 }
+
+/* Buttons Styles */
+
+.btng-w-d{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font-weight: 600;
+    padding: var(--btn-default);
+    color: var(--text-color-primary);
+    border: var(--border-secondary);
+    border-radius: var(--radius-1);
+    font: var(--fsize-20);
+    background-color: none;
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btng-b-d{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font-weight: 600;
+    padding: var(--btn-default);
+    color: var(--text-color-secondary);
+    border: var(--border-primary);
+    border-radius: var(--radius-1);
+    font: var(--fsize-20);
+    background-color: none;
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btnf-w-d{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font: var(--fsize-20);
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    padding: var(--btn-default);
+    border-radius: var(--radius-1);
+    background-color: var(--terciary-color);
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btng-w-d:hover, .btng-b-d:hover, .btnf-w-d:hover{
+    transform: scale(1.05);
+  }

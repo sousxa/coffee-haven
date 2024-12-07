@@ -85,34 +85,15 @@
     gap: var(--gp-24);
 
 }
-.btn-ghost{
-    display: flex;
-    align-items: center;
-    font: var(--fsize-20);
-    font-weight: 600;
-    color: var(--text-color-primary);
-    padding: var(--btn-default);
-    border: var(--border-secondary);
-    border-radius: var(--radius-1);
-    background-color: none;
-    opacity: 0;
+.btn-cta-1{
+    opacity: 0; 
     animation: .5s swift-up cubic-bezier(0.25, 1, 0.5, 1) forwards, .5s fade-in cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
     animation-delay: 1s;
 }
 
-.btn-fill{
-    display: flex;
-    align-items: center;
-    font: var(--fsize-20);
-    font-weight: 600;
-    color: var(--text-color-secondary);
-    padding: var(--btn-default);
-    border-radius: var(--radius-1);
-    background-color: var(--terciary-color);
+.btn-cta-2{
     opacity: 0;
     animation: .5s swift-up cubic-bezier(0.25, 1, 0.5, 1) forwards, .5s fade-in cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
     animation-delay: 1.1s;
 }
 
@@ -126,14 +107,6 @@
 .content-welcome:hover .title-p{
   font-variation-settings: "wght" 750; 
   letter-spacing: 1.5px;
-}
-
-.btn-ghost:hover{
-  transform: scale(1.05);
-}
-
-.btn-fill:hover{
-    transform: scale(1.05);
 }
 
 @keyframes zooom-in{
