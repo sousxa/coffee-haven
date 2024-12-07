@@ -98,6 +98,22 @@
     cursor: pointer;
 }
 
-.btng-w-d:hover, .btng-b-d:hover, .btnf-w-d:hover,.btng-b-c:hover{
+.btnf-b-d{
+    display: flex;
+    text-wrap: nowrap;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    font: var(--fsize-20);
+    font-weight: 600;
+    color: var(--text-color-primary);
+    padding: var(--btn-default);
+    border: none;
+    border-radius: var(--radius-1);
+    background-color: var(--primary-color);
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btng-w-d:hover, .btng-b-d:hover, .btnf-w-d:hover,.btng-b-c:hover,.btnf-b-d:hover{
     transform: scale(1.05);
   }

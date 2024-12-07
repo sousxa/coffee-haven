@@ -34,18 +34,19 @@
 .fb-content{
     width: 100%;
     gap: var(--gp-48);
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
 }
 
 .fb-comment{
     display: flex;
-    width: fit-content;
     flex-direction: column;
     gap: var(--gp-24);
     border: var(--border-primary);
     border-radius: var(--radius-3);
     padding: var(--gp-24);
+    grid-area: span 2;
 }
 
 .fb-mark{
@@ -54,7 +55,7 @@
 }
 
 .fb-c-text{
-    width: 100%;
+    width: 500px;
     height: 100%;
     font: var(--fsize-20);
     line-height: 1.75rem;

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="./assets/coffee-haven-white.svg" type="image/x-icon">
     <title>Coffee Haven</title>
 </head>
@@ -164,15 +165,29 @@
             </div>
         </main>
     </section>
-    
-    
+    <section class="updates">
+        <main class="up-container">
+            <div class="up-header">
+                <h1 class="up-title">Stay Up to Date</h1>
+                <p class="up-subtitle">Want to know the latest news about our coffees, exclusive promotions and special events? Receive all updates directly to your email!</p>
+            </div>
+            <div class="up-fields">
+                <input type="text" name="Name" id="field.name" placeholder="Name" class="up-input">
+                <input type="email" name="E-mail" id="field.email" placeholder="E-mail" class="up-input">
+                <button class="btnf-b-d up-btn">Receive Updates</button>
+            </div>
+        </main>
+    </section>
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!--  Carousel -->
   <script>
     lucide.createIcons();
-    /* Carousel */
     var copy = document.querySelector(".placard-content").cloneNode(true);
     document.querySelector(".placard").appendChild(copy);
   </script>
+
 </body>
 </html>
