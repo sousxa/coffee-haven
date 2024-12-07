@@ -5,6 +5,7 @@
 @import url("./styles/why-coffee.css");
 @import url("./styles/about-us.css");
 @import url("./styles/our-coffee.css");
+@import url("./styles/feedbacks.css");
 
 * {
     margin: 0;

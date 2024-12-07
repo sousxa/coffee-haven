@@ -84,6 +84,20 @@
     transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.btng-w-d:hover, .btng-b-d:hover, .btnf-w-d:hover{
+.btng-b-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    color: var(--text-color-secondary);
+    border: var(--border-primary);
+    border-radius: var(--radius-circle);
+    background-color: var(--terciary-color);
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
+}
+
+.btng-w-d:hover, .btng-b-d:hover, .btnf-w-d:hover,.btng-b-c:hover{
     transform: scale(1.05);
   }
