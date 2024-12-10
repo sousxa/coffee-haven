@@ -7,6 +7,8 @@
 @import url("./styles/our-coffee.css");
 @import url("./styles/feedbacks.css");
 @import url("./styles/updates.css");
+@import url("./styles/subscription.css");
+@import url("./styles/faq.css");
 
 * {
     margin: 0;

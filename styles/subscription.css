@@ -1,0 +1,125 @@
+.subscription{
+    display: flex;
+    flex-direction: column;
+    padding: var(--gp-86) var(--gp-64);
+    gap: var(--gp-48);
+}
+
+.sbs-title{
+    font: var(--fsize-20);
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+}
+
+.sbs-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.sbs-subtitle{
+    font: var(--fsize-40);
+    color: var(--text-color-secondary);
+}
+
+.sbs-descp{
+    width: 40%;
+    font: var(--fsize-20);
+    color: var(--text-color-terciary);
+}
+
+.sbs-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gp-86);
+}
+
+.sbs-container-w{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gp-48);
+    padding: var(--gp-24);
+    border: var(--border-primary);
+    border-radius: var(--radius-3);
+}
+
+.sbs-c-t{
+    width: 40%;
+    font: var(--fsize-24);
+    color: var(--text-color-secondary);
+    font-weight: normal;
+}
+
+.sbs-c-t strong{
+    font: var(--fsize-32);
+    font-family: "Sansita", serif;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.sbs-c-price{
+    font: var(--fsize-16);
+    color: var(--text-color-secondary);
+}
+
+.sbs-c-price strong{
+    font: var(--fsize-40);
+}
+
+.sbs-c-list{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gp-24);
+}
+
+.sbs-item-list{
+    width: 100%;
+    font: var(--fsize-18);
+    color: var(--text-color-secondary);
+}
+
+.sbs-btn{
+    width: 100%;
+    justify-content: center;
+}
+
+.sbs-container-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gp-48);
+    padding: var(--gp-24);
+    background: var(--secondary-color);
+    border-radius: var(--radius-3);
+}
+
+.sbs-c-t-b{
+    width: 40%;
+    font: var(--fsize-24);
+    color: var(--text-color-primary);
+    font-weight: normal;
+}
+
+.sbs-c-t-b strong{
+    font: var(--fsize-32);
+    font-family: "Sansita", serif;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.sbs-c-price-b{
+    font: var(--fsize-16);
+    color: var(--text-color-primary);
+}
+
+.sbs-c-price-b strong{
+    font: var(--fsize-40);
+}
+
+.sbs-item-list-b{
+    width: 100%;
+    font: var(--fsize-18);
+    color: var(--text-color-primary);
+}

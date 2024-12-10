@@ -100,7 +100,7 @@
 
 .btnf-b-d{
     display: flex;
-    text-wrap: nowrap;
+    word-wrap: nowrap;
     width: fit-content;
     justify-content: center;
     align-items: center;
@@ -112,6 +112,7 @@
     border-radius: var(--radius-1);
     background-color: var(--primary-color);
     transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
 }
 
 .btng-w-d:hover, .btng-b-d:hover, .btnf-w-d:hover,.btng-b-c:hover,.btnf-b-d:hover{
