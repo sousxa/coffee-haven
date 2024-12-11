@@ -90,10 +90,23 @@
     align-items: center;
     width: 48px;
     height: 48px;
-    color: var(--text-color-secondary);
+    color: var(--text-color-primary);
     border: var(--border-primary);
     border-radius: var(--radius-circle);
-    background-color: var(--terciary-color);
+    background-color: var(--secondary-color);
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
+}
+
+.btng-w-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    color: var(--text-color-primary);
+    border: var(--border-secondary);
+    border-radius: var(--radius-circle);
     transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
     cursor: pointer;
 }
@@ -106,6 +119,7 @@
     align-items: center;
     font: var(--fsize-20);
     font-weight: 600;
+    gap: var(--gp-8);
     color: var(--text-color-primary);
     padding: var(--btn-default);
     border: none;

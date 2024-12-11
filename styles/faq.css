@@ -1,6 +1,7 @@
 .faq{
     padding: var(--gp-86) var(--gp-64);
     background-color: var(--secondary-color);
+    min-height: 844px ;
 }
 
 .faq-content{
@@ -13,7 +14,10 @@
     padding: var(--gp-24);
     border: var(--border-secondary);
     border-radius: var(--radius-3);
-    background-color: var(--opacity-bg);
+    background-image: url("../assets/faq.jpg");
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
 }
 
 .faq-box{
@@ -38,19 +42,23 @@
 
 
 .faq-ls{
+    height: 710px;
     display: grid;
     grid-column:span 2;
     gap: var(--gp-24);
+    place-content: space-between;
 }
 
-.faq-accordion-open{
+.faq-item{
     display: flex;
     flex-direction: column;
     padding: var(--gp-24);
-    background-color: var(--terciary-color);
     border-radius: var(--radius-3);
-    gap: var(--gp-8);
+    border: var(--border-secondary);
+    grid-column: span 2;
+    transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1)
 }
+
 
 .faq-header{
     display: flex;
@@ -61,11 +69,53 @@
 
 .faq-ls-tt{
     font: var(--fsize-24);
-    color: var(--text-color-secondary);
+    color: var(--text-color-primary);
 }
 
+
 .faq-ls-descp{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
     font: var(--fsize-18);
     color: var(--text-color-terciary);
 }
 
+.faq-button{
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0s 0s cubic-bezier(0.4, 0.0, 0.2, 1), height 0 0s cubic-bezier(0.4, 0.0, 0.2, 1), padding 0s 0s cubic-bezier(0.4, 0.0, 0.2, 1), visibility 0s 0s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.faq-item.open{
+    gap: var(--gp-8);
+    background-color: var(--terciary-color);
+}
+
+.faq-item.open .faq-ls-tt{
+    color: var(--text-color-secondary);
+}
+
+.faq-item.open .faq-ls-descp {
+    opacity: 1;
+    max-height: auto;
+}
+
+.faq-item.open .faq-arrow {
+    color: var(--text-color-primary);
+    border: var(--border-primary);
+    background-color: var(--secondary-color);
+    transform: rotate(180deg);
+    transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.faq-item.open .faq-button{
+    visibility: visible;
+    height: fit-content;
+    padding: var(--btn-default);
+    opacity: 1;
+    transition: opacity 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), height 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), padding 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), visibility 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
