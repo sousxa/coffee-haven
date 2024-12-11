@@ -1,0 +1,55 @@
+.p-header{
+    width: 100%;
+    position: fixed;
+    top: -80px;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.p-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gp-8) var(--gp-20) var(--gp-8) var(--gp-16);
+}
+
+.p-logo-nav{
+    width: 64px;
+}
+
+.p-nav-menus{
+    display: flex;
+    align-items: center;
+    gap: var(--gp-24);
+}
+
+.p-nav-menu{
+    color: var(--text-color-primary);
+    font: var(--fsize-20);
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.p-nav-menu:hover{
+    transform: scale(1.05);
+}
+
+.p-nav-menu-login{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--terciary-color);
+    border-radius: var(--radius-circle);
+    cursor: pointer;
+}
+
+.p-icon-login{
+    color: var(--primary-color);
+    stroke-width: 2.5px;
+}

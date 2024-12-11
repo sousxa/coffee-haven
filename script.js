@@ -88,3 +88,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+//Header Scroll
+
+const header = document.getElementById('header');
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 0) {
+        header.style.top = '0';
+    } else {
+        header.style.top = '-80px';
+    }
+
+    lastScrollY = currentScrollY; 
+});

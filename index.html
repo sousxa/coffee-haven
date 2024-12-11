@@ -13,17 +13,30 @@
     <title>Coffee Haven</title>
 </head>
 <body>
-    <section class="welcome">
+    <header id="header" class="p-header">
+        <nav class="p-navbar">
+            <a href="#welcome" class="p-logo-nav" ><img class="p-logo-nav" src="./assets/coffee-haven-white.svg" alt="Coffee Beans Enterprise Logo"></a>
+            <ul class="p-nav-menus">
+                <li><a href="#about-us" class="p-nav-menu">About us</a></li>
+                <li><a class="p-nav-menu" href="#ourcoffee">Our Coffee</a></li>
+                <li><a class="p-nav-menu" href="#subs">Subscription</a></li>
+                <li><a class="p-nav-menu" href="#ctt">Contact</a></li>
+                <li><a class="p-nav-menu" href="#faq">FAQ</a></li>
+                <li class="p-nav-menu-login"> <i data-lucide="user-round" class="icon-login" alt="Person icon representing login"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="welcome" class="welcome">
         <main class="content-welcome">
             <header class="header">
                 <nav class="navbar">
-                    <img class="logo-nav" src="./assets/coffee-haven-white.svg" alt="Coffee Beans Enterprise Logo">
+                    <a href="#welcome" class="logo-nav" ><img class="logo-nav" src="./assets/coffee-haven-white.svg" alt="Coffee Beans Enterprise Logo"></a>
                     <ul class="nav-menus">
-                        <li class="nav-menu">About us</li>
-                        <li class="nav-menu">Our Coffee</li>
-                        <li class="nav-menu">Subscription</li>
-                        <li class="nav-menu">Contact</li>
-                        <li class="nav-menu">FAQ</li>
+                        <li><a href="#about-us" class="nav-menu">About us</a></li>
+                        <li><a class="nav-menu" href="#ourcoffee">Our Coffee</a></li>
+                        <li><a class="nav-menu" href="#subs">Subscription</a></li>
+                        <li><a class="nav-menu" href="#ctt">Contact</a></li>
+                        <li><a class="nav-menu" href="#faq">FAQ</a></li>
                         <li class="nav-menu-login"> <i data-lucide="user-round" class="icon-login" alt="Person icon representing login"></i></li>
                     </ul>
                 </nav>
@@ -85,7 +98,7 @@
         </main>
 
     </section>
-    <section class="about-us">
+    <section id="about-us" class="about-us">
         <main class="us-content">
             <div class="us-text">
                 <h1 class="us-title">About Us</h1>
@@ -117,7 +130,7 @@
             </div>
         </main>
     </section>
-    <section class="our-coffee">
+    <section id="ourcoffee" class="our-coffee">
         <img src="/assets/our-coffee.jpg" alt="" class="our-img">
         <main class="our-content">
             <h1 class="our-title">Our Coffee</h1>
@@ -200,7 +213,7 @@
             </div>
         </main>
     </section>
-    <section class="subscription">
+    <section id="subs" class="subscription">
         <h1 class="sbs-title">subscription</h1>
         <div class="sbs-header">
             <h2 class="sbs-subtitle">Loyalty Subscription</h2>
@@ -245,7 +258,7 @@
             </div>
         </main>
     </section>
-    <section class="faq">
+    <section id="faq" class="faq">
         <main class="faq-content">
             <div class="faq-imgbox">
                 <div class="faq-box">
@@ -295,7 +308,7 @@
     </section>
     <footer>
         <main class="ft-content">
-            <div class="ft-ctt">
+            <div id="ctt" class="ft-ctt">
                 <h1 class="ft-ctt-tt">Contact</h1>
                 <ul class="ft-list">
                     <li class="ft-li">Phone numbers:
@@ -332,7 +345,7 @@
             </div>
         </div>
         <div class="ft-divider"></div>
-        <a href="https://github.com/sousxa" class="ft-dev">Developed by (h).dev<i data-lucide="github"></i></a>
+        <a href="https://github.com/sousxa" class="ft-dev">Developed by Sousxa<i data-lucide="github"></i></a>
         
     </footer>
 
