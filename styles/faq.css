@@ -1,5 +1,5 @@
 .faq{
-    padding: var(--gp-86) var(--gp-64);
+    padding: var(--gp-86) var(--gp-64) var(--gp-24);
     background-color: var(--secondary-color);
     min-height: 844px ;
 }
@@ -32,6 +32,7 @@
 .faq-tt{
     font: var(--fsize-40);
     color: var(--text-color-primary);
+    transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .faq-descp{

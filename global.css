@@ -9,6 +9,7 @@
 @import url("./styles/updates.css");
 @import url("./styles/subscription.css");
 @import url("./styles/faq.css");
+@import url("./styles/footer.css");
 
 * {
     margin: 0;

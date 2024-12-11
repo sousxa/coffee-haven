@@ -1,0 +1,143 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gp-24) var(--gp-64) var(--gp-86);
+    background-color: var(--secondary-color);
+    gap: var(--gp-48);
+    align-items: center;
+}
+
+.ft-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gp-48);
+}
+
+.ft-ctt{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gp-24);
+    padding: var(--gp-24);
+    background-color: var(--terciary-color);
+    border-radius: var(--radius-3);
+    place-content: space-between;
+    position: relative;
+}
+
+.ft-ctt-tt{
+    font: var(--fsize-40);
+    font-family: "Sansita", serif;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: var(--text-color-secondary);
+}
+
+.ft-list{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gp-24);
+}
+
+.ft-li{
+    font: var(--fsize-20);
+    font-weight: 600;
+    color: var(--text-color-secondary);
+}
+
+.ft-cfb{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    transform: rotate(-135deg);
+    width: 128px; 
+}
+
+.ft-consult{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: space-between;
+    gap: var(--gp-64);
+    padding: var(--gp-24);
+    grid-column: span 2;
+    border-radius: var(--radius-3);
+    background: url(../assets/footer.jpg) no-repeat center center/cover;
+    background-clip: border-box;
+    border: var(--border-secondary);
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.8);
+}
+
+.ft-clt-tt{
+    font: var(--fsize-20);
+    text-transform: uppercase;
+    color: var(--text-color-primary);
+}
+
+.ft-clt-txt{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gp-16);
+}
+
+.ft-clt-sub{
+    width: 40%;
+    font: var(--fsize-40);
+    color: var(--text-color-primary);
+}
+
+.ft-clt-desc{
+    width: 75%;
+    font: var(--fsize-20);
+    color: var(--text-color-primary);
+    line-height: 1.75rem;
+}
+
+.ft-rights-socials{
+    display: flex;
+    width: 100%;
+    place-content: space-between;
+}
+.ft-rights{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: var(--gp-16);
+}
+
+.ft-cfb-2{
+    width: 64px;
+}
+
+.ft-r-txt{
+    font: var(--fsize-16);
+    color: var(--text-color-primary);
+}
+
+.ft-socials{
+    display: flex;
+    gap: var(--gp-24);
+    align-items: center;
+}
+
+.ft-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--terciary-color);
+    cursor: pointer;
+}
+
+.ft-divider{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--terciary-color);
+}
+
+.ft-dev{
+    display: flex;
+    font: var(--fsize-16);
+    font-weight: 600;
+    color: var(--text-color-primary);
+    gap: var(--gp-8);
+}

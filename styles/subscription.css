@@ -36,8 +36,8 @@
 .sbs-container-w{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: var(--gp-48);
+    place-content: space-between;
+    gap: var(--gp-64);
     padding: var(--gp-24);
     border: var(--border-primary);
     border-radius: var(--radius-3);
@@ -87,8 +87,8 @@
 .sbs-container-b{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: var(--gp-48);
+    place-content: space-between;
+    gap: var(--gp-64);
     padding: var(--gp-24);
     background: var(--secondary-color);
     border-radius: var(--radius-3);
