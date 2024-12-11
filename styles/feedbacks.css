@@ -1,4 +1,5 @@
 .feedbacks{
+    width: 100%;
     padding: var(--gp-86) var(--gp-64);
     display: flex;
     flex-direction: column;
@@ -33,20 +34,21 @@
 
 .fb-content{
     width: 100%;
-    gap: var(--gp-48);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     overflow: hidden;
+    gap: var(--gp-24);
 }
 
-.fb-comment{
+.fb-comment{ 
+    width: 100%;
+    flex: 0 0 calc(50.5% - var(--gp-24));
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: var(--gp-24);
     border: var(--border-primary);
     border-radius: var(--radius-3);
     padding: var(--gp-24);
-    grid-area: span 2;
 }
 
 .fb-mark{
@@ -94,4 +96,10 @@
 .fb-plan{
     font: var(--fsize-16);
     color: var(--text-color-terciary);
+}
+
+.btng-b-c.disabled {
+    background-color: #fff;
+    color: var(--text-color-secondary);
+    pointer-events: none; /* Desativa o clique */
 }
