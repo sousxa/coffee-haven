@@ -1,7 +1,7 @@
 .p-header{
     width: 100%;
     position: fixed;
-    top: -80px;
+    top: -100px;
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -53,3 +53,20 @@
     color: var(--primary-color);
     stroke-width: 2.5px;
 }
+
+@media (min-width: 375px) and (max-width: 999px){
+    .p-nav-menu{
+        display: none;
+    }
+    .p-nav-menu-login{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+    .nav-menus{
+        height: 40px;
+        align-items: center;
+    }
+  }

@@ -7,29 +7,29 @@ var copy = document.querySelector(".placard-content").cloneNode(true);
 
 document.getElementById("next").addEventListener("click", function() {
     const carousel = document.querySelector(".fb-content");
-    const itemWidth = carousel.querySelector(".fb-comment").offsetWidth + parseInt(getComputedStyle(carousel).gap); 
-    const totalWidth = carousel.scrollWidth; 
+    const itemWidth = carousel.querySelector(".fb-comment").offsetWidth + parseInt(getComputedStyle(carousel).gap);
+    const totalWidth = carousel.scrollWidth;
     const scrollPosition = carousel.scrollLeft;
 
-    if (scrollPosition + itemWidth * 2 < totalWidth) {
-        
-        carousel.scrollBy({ left: itemWidth * 2, behavior: 'smooth' });
-    }
-
     
+    const itemsToScroll = window.innerWidth < 700 ? 1 : 2; 
+
+    if (scrollPosition + itemWidth * itemsToScroll < totalWidth) {
+        carousel.scrollBy({ left: itemWidth * itemsToScroll, behavior: 'smooth' });
+    }
     updateArrowStates();
 });
 
 document.getElementById("prev").addEventListener("click", function() {
     const carousel = document.querySelector(".fb-content");
-    const itemWidth = carousel.querySelector(".fb-comment").offsetWidth + parseInt(getComputedStyle(carousel).gap); 
+    const itemWidth = carousel.querySelector(".fb-comment").offsetWidth + parseInt(getComputedStyle(carousel).gap);
+    const scrollPosition = carousel.scrollLeft;
 
-    const scrollPosition = carousel.scrollLeft; 
+    const itemsToScroll = window.innerWidth < 700 ? 1 : 2;
 
     if (scrollPosition > 0) {
-        carousel.scrollBy({ left: -itemWidth * 2, behavior: 'smooth' });
+        carousel.scrollBy({ left: -itemWidth * itemsToScroll, behavior: 'smooth' });
     }
-
     updateArrowStates();
 });
 
@@ -38,13 +38,14 @@ function updateArrowStates() {
     const scrollPosition = carousel.scrollLeft;
     const itemWidth = carousel.querySelector(".fb-comment").offsetWidth + parseInt(getComputedStyle(carousel).gap);
     const totalWidth = carousel.scrollWidth;
-    
-    if (scrollPosition + itemWidth * 2 >= totalWidth) {
+
+    const itemsToScroll = window.innerWidth < 700 ? 1 : 2;
+
+    if (scrollPosition + itemWidth * itemsToScroll >= totalWidth) {
         document.getElementById("next").classList.add("disabled");
     } else {
         document.getElementById("next").classList.remove("disabled");
     }
-
     if (scrollPosition === 0) {
         document.getElementById("prev").classList.add("disabled");
     } else {
@@ -53,7 +54,6 @@ function updateArrowStates() {
 }
 
 window.addEventListener("load", updateArrowStates);
-
 document.querySelector(".fb-content").addEventListener("scroll", function() {
     updateArrowStates();
 });
@@ -104,4 +104,38 @@ window.addEventListener('scroll', () => {
     }
 
     lastScrollY = currentScrollY; 
+});
+
+//Menu Mobile
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btnMobile = document.getElementById('menu-mobile');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+    const btnWelcome = document.getElementById('menu-mobile-welcome');
+    const body = document.body;
+
+    btnMobile.addEventListener('click', function () {
+        offScreenMenu.classList.toggle('active');
+        body.classList.toggle('no-scroll'); 
+    });
+
+    btnWelcome.addEventListener('click', function () {
+        offScreenMenu.classList.toggle('active');
+        body.classList.toggle('no-scroll'); 
+    });
+
+    const closeButton = document.getElementById('btn-mobile');
+    closeButton.addEventListener('click', function () {
+        offScreenMenu.classList.remove('active'); 
+        body.classList.remove('no-scroll'); 
+    });
+
+    const menuItems = document.querySelectorAll('.of-nav-menu');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            offScreenMenu.classList.remove('active');
+            body.classList.remove('no-scroll');
+        });
+    });
+
 });

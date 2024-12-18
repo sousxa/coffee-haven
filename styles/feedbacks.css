@@ -103,3 +103,30 @@
     color: var(--text-color-secondary);
     pointer-events: none; /* Desativa o clique */
 }
+
+@media (min-width: 375px) and (max-width: 900px){
+
+
+    .fb-comment{
+        flex: 0 0 100%;
+    }
+
+    .fb-header{
+        flex-direction: column;
+        gap: var(--gp-24);
+    }
+
+    .fb-arrows{
+        place-content: space-between;
+    }
+
+    .fb-header-text{
+        width: 90%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+    .feedbacks{
+        padding: var(--gp-48) var(--gp-16);
+    }
+}

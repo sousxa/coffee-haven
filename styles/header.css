@@ -48,3 +48,33 @@
     color: var(--primary-color);
     stroke-width: 2.5px;
 }
+
+.nav-mobile{
+    display: none;
+    color: var(--terciary-color);
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    border:none;
+    background: none;
+}
+
+.menu-icon{
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 375px) and (max-width: 999px){
+    .nav-menu{
+        display: none;
+    }
+    .nav-menu-login{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+    .nav-menus{
+        height: 40px;
+        align-items: center;
+    }
+  }

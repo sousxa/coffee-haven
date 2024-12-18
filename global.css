@@ -11,7 +11,7 @@
 @import url("./styles/faq.css");
 @import url("./styles/footer.css");
 @import url("./styles/p-header.css");
-
+@import url("./styles/off-screen.css");
 
 * {
     margin: 0;

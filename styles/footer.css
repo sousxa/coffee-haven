@@ -17,6 +17,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: var(--gp-24);
+    justify-content: center;
     padding: var(--gp-24);
     background-color: var(--terciary-color);
     border-radius: var(--radius-3);
@@ -35,7 +36,9 @@ footer {
 
 .ft-list{
     display: flex;
+    height: 100%;
     flex-direction: column;
+    place-content: space-between;
     gap: var(--gp-24);
 }
 
@@ -46,6 +49,7 @@ footer {
 }
 
 .ft-cfb{
+    visibility: visible;
     position: absolute;
     right: 0%;
     top: 0%;
@@ -125,6 +129,12 @@ footer {
     height: 36px;
     color: var(--terciary-color);
     cursor: pointer;
+    transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.ft-icon:hover{
+    transform: scale(1.2);
+    
 }
 
 .ft-divider{
@@ -140,4 +150,95 @@ footer {
     font-weight: 600;
     color: var(--text-color-primary);
     gap: var(--gp-8);
+}
+
+/* Media Quiere */
+
+@media (min-width: 1000px) and (max-width: 1200px){
+    .ft-consult{
+        gap: var(--gp-24);
+    }
+
+    .ft-clt-sub{
+        width: 80%;
+    }
+
+    .ft-clt-desc{
+        width:90%;
+    }
+
+    .ft-cfb{
+        width: 86px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px){
+    .ft-cfb{
+        visibility: hidden;
+    }
+
+    .ft-consult{
+        gap: var(--gp-24);
+    }
+
+    .ft-clt-sub{
+        width: 80%;
+    }
+
+    .ft-clt-desc{
+        width:90%;
+    }
+
+    .ft-cfb{
+        width: 86px;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+
+    footer{
+        padding: var(--gp-48) var(--gp-16);
+    }
+
+    .ft-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ft-cfb{
+        visibility: visible;
+    }
+
+    .ft-consult{
+        gap: var(--gp-24);
+    }
+
+    .ft-clt-sub{
+        width: 90%;
+    }
+
+    .ft-clt-desc{
+        width:90%;
+    }
+
+    .ft-cfb{
+        width: 86px;
+    }
+
+    .ft-rights-socials{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: var(--gp-16);
+    }
+
+    .ft-rights{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ft-cfb-2{
+        display: none;
+    }
+
 }

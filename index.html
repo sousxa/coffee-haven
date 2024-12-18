@@ -13,6 +13,19 @@
     <title>Coffee Haven</title>
 </head>
 <body>
+
+    <div class="off-screen-menu">
+        <button id="btn-mobile" type="button" title="menu" class="of-nav-mobile"><i data-lucide="x" class="of-menu-icon" ></i>
+        </button>
+        <ul class="of-nav-menus">
+            <li><a href="#about-us" class="of-nav-menu">About us</a></li>
+            <li><a class="of-nav-menu" href="#ourcoffee">Our Coffee</a></li>
+            <li><a class="of-nav-menu" href="#subs">Subscription</a></li>
+            <li><a class="of-nav-menu" href="#ctt">Contact</a></li>
+            <li><a class="of-nav-menu" href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btnf-w-d off-btn">Login</a>
+    </div>
     <header id="header" class="p-header">
         <nav class="p-navbar">
             <a href="#welcome" class="p-logo-nav" ><img class="p-logo-nav" src="./assets/coffee-haven-white.svg" alt="Coffee Beans Enterprise Logo"></a>
@@ -23,6 +36,10 @@
                 <li><a class="p-nav-menu" href="#ctt">Contact</a></li>
                 <li><a class="p-nav-menu" href="#faq">FAQ</a></li>
                 <li class="p-nav-menu-login"> <i data-lucide="user-round" class="icon-login" alt="Person icon representing login"></i></li>
+                <li>
+                    <button type="button" id="menu-mobile" type="button" title="menu" class="nav-mobile"><i data-lucide="menu" class="menu-icon" ></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -38,6 +55,11 @@
                         <li><a class="nav-menu" href="#ctt">Contact</a></li>
                         <li><a class="nav-menu" href="#faq">FAQ</a></li>
                         <li class="nav-menu-login"> <i data-lucide="user-round" class="icon-login" alt="Person icon representing login"></i></li>
+                        <li>
+                        <button id="menu-mobile-welcome" type="button" title="menu" class="nav-mobile"><i data-lucide="menu" class="menu-icon" ></i>
+                        </button>
+                        </li>
+
                     </ul>
                 </nav>
             </header>
@@ -244,7 +266,7 @@
                 </ul>
                 <a href="" class="btnf-w-d sbs-btn">Discover</a>
             </div>
-            <div class="sbs-container-w">
+            <div class="sbs-container-w sbs-2">
                 <h1 class="sbs-c-t">Plus Plan <strong>“Capuccino”</strong></h1>
                 <h2 class="sbs-c-price"><strong>$30</strong>/month</h2>
                 <ul class="sbs-c-list">
@@ -301,7 +323,7 @@
                         <div class="btng-w-c faq-arrow"><i data-lucide="chevron-down"></i></div>
                     </div>
                     <p class="faq-ls-descp">Yes, we offer gift subscriptions. It’s a great way to surprise someone special with high-quality coffee delivered straight to their door.</p>
-                    <a class="btnf-b-d faq-button"><i data-lucide="gift"></i> Gift Subscription</a>
+                    <a class="btnf-b-d faq-btn"><i data-lucide="gift"></i> Gift Subscription</a>
                 </li>
             </ul>
         </main>

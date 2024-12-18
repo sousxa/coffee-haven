@@ -23,7 +23,7 @@
 .faq-box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    place-content: space-between;
     background-color: var(--secondary-color);
     padding: var(--gp-16);
     border-radius: var(--radius-2);
@@ -36,7 +36,7 @@
 }
 
 .faq-descp{
-    width: 50%;
+    width: 25%;
     font: var(--fsize-14);
     color: var(--text-color-primary);
 }
@@ -67,6 +67,7 @@
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
+    gap: var(--gp-24);
 }
 
 .faq-ls-tt{
@@ -84,12 +85,18 @@
     color: var(--text-color-terciary);
 }
 
-.faq-button{
+.faq-btn{
     visibility: hidden;
     height: 0;
     padding: 0;
     opacity: 0;
     transition: opacity 0s 0s cubic-bezier(0.4, 0.0, 0.2, 1), height 0 0s cubic-bezier(0.4, 0.0, 0.2, 1), padding 0s 0s cubic-bezier(0.4, 0.0, 0.2, 1), visibility 0s 0s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.faq-arrow{
+    width: fit-content;
+    width: 48px;
+    height: 48px;
 }
 
 .faq-item.open{
@@ -114,10 +121,54 @@
     transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.faq-item.open .faq-button{
+.faq-item.open .faq-btn{
     visibility: visible;
     height: fit-content;
     padding: var(--btn-default);
     opacity: 1;
     transition: opacity 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), height 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), padding 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), visibility 0.3s 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
+
+/* Media Quiere */
+
+@media (min-width: 1000px) and (max-width: 1200px){
+
+    .faq-content{
+     grid-template-columns: 1fr
+    }
+
+    .faq-ls{
+        grid-column: 1 / 2;
+        gap: var(--gp-24);
+    }
+
+    .faq-imgbox{
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 999px){
+    .faq-content{
+        grid-template-columns: 1fr
+       }
+   
+       .faq-ls{
+           grid-column: 1 / 2;
+           gap: var(--gp-24);
+       }
+   
+       .faq-imgbox{
+           height: 300px;
+       }
+       .faq-descp{
+        width: 60%;
+       }
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+    .faq{
+        padding: var(--gp-48) var(--gp-16);
+    }
+}
+

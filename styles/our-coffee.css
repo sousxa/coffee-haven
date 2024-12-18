@@ -43,3 +43,29 @@
     font: var(--fsize-20);
     color: var(--text-color-terciary);
 }
+
+/* Media Quiere */
+
+@media (min-width: 700px) and (max-width: 1200px){
+    .our-subtitle{
+        width: 100%;
+    }
+
+    .our-descp{
+    line-height: 1.75rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+
+
+    .our-coffee{
+        flex-direction: column;
+        gap: var(--gp-16);
+        padding: var(--gp-48) var(--gp-16);
+    }
+
+    .our-img{
+        width: 100%;
+    }
+}

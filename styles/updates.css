@@ -27,7 +27,6 @@
 
 .up-fields{
     display: flex;
-    flex-direction: row;
     gap: var(--gp-24);
 }
 
@@ -56,4 +55,61 @@ input[type="email"]:focus, input[type="text"]:focus{
 .up-btn{
     min-width: 340px;
     border-radius: var(--radius-2);
+}
+
+/* Media Quiere */
+
+@media (min-width: 1000px) and (max-width: 1200px){
+
+    .up-subtitle{
+        width: 100%;
+    }
+
+    .up-fields{
+        flex-wrap: wrap;
+    }
+
+    .up-input{
+        flex: 1;
+    }
+
+    .up-btn{
+        padding: var(--gp-24);
+        flex: 1 0 100%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 999px){
+    .up-subtitle{
+        width: 100%;
+    }
+
+    .up-fields{
+        flex-wrap: wrap;
+    }
+
+    .up-input{
+        flex: 1;
+    }
+
+    .up-btn{
+        padding: var(--gp-24);
+        flex: 1 0 100%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+
+    .updates{
+        padding: var(--gp-48) var(--gp-16);
+    }
+
+    .up-fields{
+        flex-direction: column;
+    }
+
+    .up-btn{
+       min-width: 100%;
+       word-wrap: break-word;
+    }
 }
