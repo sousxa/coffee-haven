@@ -153,3 +153,10 @@ span:nth-of-type(2) i {
     height: 48px;
   }
 }
+
+@media (min-width: 375px) and (max-width: 400px){
+    .cta-welcome{
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+}
