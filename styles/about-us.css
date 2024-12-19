@@ -34,7 +34,6 @@
 .us-box1{
     display: flex;
     max-width: 100%;
-    min-width: 368px;
     padding: var(--gp-24);
     border: var(--border-secondary);
     border-radius: var(--radius-3);
@@ -207,5 +206,36 @@
 @media (min-width: 375px) and (max-width: 700px){
     .about-us{
         padding: var(--gp-48) var(--gp-16);
+    }
+}
+
+@media (min-width: 375px) and (max-width: 500px){
+
+    .us-box3{
+        height: 300px;
+    }
+
+    .us-box4{
+        height: 300px;
+    }
+
+    .us-box5{
+        height: 200px;
+    }
+
+    .b5-text{
+        width: 100%;
+    }
+
+    .us-title{
+        font: var(--fsize-28);
+    }
+
+    .us-desc{
+        font: var(--fsize-18);
+    }
+
+    .us-box1 p{
+        font: var(--fsize-28);
     }
 }

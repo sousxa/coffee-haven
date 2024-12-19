@@ -21,23 +21,3 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-/* Scroll bar */
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--text-color-terciary);
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color);
-}
-
-/* Estilo da barra de rolagem para Firefox */
-.scrollable {
-    scrollbar-width: thin;
-    scrollbar-color: var(--text-color-terciary) var(--primary-color);
-}

@@ -113,3 +113,15 @@ input[type="email"]:focus, input[type="text"]:focus{
        word-wrap: break-word;
     }
 }
+
+@media (min-width: 375px) and (max-width: 700px){
+    .up-title{
+        font: var(--fsize-28);
+        font-weight: 600;
+    }
+
+    .up-subtitle{
+        width: 100%;
+        font: var(--fsize-18);
+    }
+}

@@ -100,19 +100,21 @@
         width: 100%;
         height: 250px;
     }
+  }
 
+  @media (min-width: 375px) and (max-width: 500px){
     .why-title{
         width: 100%;
         font: var(--fsize-28);
     }
-
+    
     .why-titlebox{
         font: var(--fsize-24);
     }
-
+    
     .why-descbox{
         font: var(--fsize-18);
     }
   }
-
+  
   

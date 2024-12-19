@@ -65,7 +65,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    place-content: space-between;
     cursor: pointer;
     gap: var(--gp-24);
 }
@@ -94,14 +94,16 @@
 }
 
 .faq-arrow{
-    width: fit-content;
-    width: 48px;
     height: 48px;
+}
+
+.arrow-faq{
+    width: 48px;
 }
 
 .faq-item.open{
     gap: var(--gp-8);
-    background-color: var(--terciary-color);
+    background-color: var(--quaternary-color);
 }
 
 .faq-item.open .faq-ls-tt{
@@ -169,6 +171,15 @@
 @media (min-width: 375px) and (max-width: 700px){
     .faq{
         padding: var(--gp-48) var(--gp-16);
+    }
+    .faq-header{
+        gap: var(--gp-16);
+    }
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+    .faq-ls-tt{
+        font: var(--fsize-20);
     }
 }
 

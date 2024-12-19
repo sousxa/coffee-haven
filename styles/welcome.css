@@ -154,9 +154,36 @@ span:nth-of-type(2) i {
   }
 }
 
-@media (min-width: 375px) and (max-width: 400px){
-    .cta-welcome{
-      align-items: center;
-      flex-direction: column-reverse;
-    }
+@media (min-width: 375px) and (max-width: 500px){
+  .content-welcome{
+  height: 535px;
+  }
+
+  .title-p{
+      font: var(--fsize-40);
+      letter-spacing: 0px; 
+  }
+
+  .btn-cta-1{
+    width: fit-content;
+    font: var(--fsize-16)!important;
+    padding: var(--gp-16)!important;
+    font-weight: 600!important;
+    height: 40px;
+  }
+
+  .btn-cta-2{
+    width: fit-content;
+    font: var(--fsize-16)!important;
+    padding: var(--gp-16)!important;
+    font-weight: 600!important;
+    height: 40px;
+  }
+
+  .sub-p{
+    font: var(--fsize-14);
+  }
+  .content-welcome:hover .bg-welcome{
+    transform: none;
+  }
 }

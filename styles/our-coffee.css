@@ -69,3 +69,15 @@
         width: 100%;
     }
 }
+
+@media (min-width: 375px) and (max-width: 500px){
+    .our-subtitle{
+        width: 90%;
+        font: var(--fsize-28);
+        font-weight: 600;
+    }
+
+    .our-descp{
+        font: var(--fsize-18);
+    }
+}

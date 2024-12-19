@@ -23,6 +23,7 @@
 }
 
 .nav-menu{
+    display: block;
     color: var(--text-color-primary);
     font: var(--fsize-20);
     cursor: pointer;
