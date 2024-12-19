@@ -60,7 +60,7 @@
     width: 100%;
     background-size: cover;
     border: var(--border-secondary);
-    background-image: url("../assets/about-1.jpg");
+    background-image: url("https://i.ibb.co/JjDGnBc/about-1.jpg");
     border-radius: var(--radius-3);
     grid-column: span 1;
     grid-row: span 1;
@@ -70,7 +70,7 @@
     width: 100%;
     background-size: cover;
     border: var(--border-secondary);
-    background-image: url("../assets/section-about-2.jpg");
+    background-image: url("https://i.ibb.co/PcYZrSd/section-about-2.jpg");
     background-position: center;
     border-radius: var(--radius-3);
     padding: var(--gp-24);
