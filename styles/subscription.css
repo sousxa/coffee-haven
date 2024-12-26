@@ -155,7 +155,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 999px){
+@media (min-width: 320px) and (max-width: 999px){
     .sbs-content{
         display: flex;
         flex-direction: column;
@@ -175,13 +175,13 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 320px) and (max-width: 700px){
     .subscription{
         padding: var(--gp-48) var(--gp-16);
     }
 }
 
-@media (min-width: 375px) and (max-width: 500px){
+@media (min-width: 320px) and (max-width: 500px){
     .sbs-subtitle{
         font: var(--fsize-28);
         font-weight: 600;

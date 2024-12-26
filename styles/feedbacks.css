@@ -104,7 +104,7 @@
     pointer-events: none; /* Desativa o clique */
 }
 
-@media (min-width: 375px) and (max-width: 900px){
+@media (min-width: 320px) and (max-width: 900px){
 
 
     .fb-comment{
@@ -128,7 +128,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 320px) and (max-width: 700px){
     .feedbacks{
         padding: var(--gp-48) var(--gp-16);
     }
@@ -137,7 +137,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 500px){
+@media (min-width: 320px) and (max-width: 500px){
     .fb-mark{
         width: 10%;
     }

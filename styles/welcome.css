@@ -141,20 +141,20 @@ span:nth-of-type(2) i {
   }
 }
 
-@media (min-width: 375px) and (max-width: 999px){
+@media (min-width: 320px) and (max-width: 999px){
   .content-welcome{
     height: 650px;
   }
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 320px) and (max-width: 700px){
   .title-p{
     font: var(--fsize-48);
     height: 48px;
   }
 }
 
-@media (min-width: 375px) and (max-width: 500px){
+@media (min-width: 320px) and (max-width: 500px){
   .content-welcome{
   height: 535px;
   }

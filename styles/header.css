@@ -63,7 +63,7 @@
     height: 40px;
 }
 
-@media (min-width: 375px) and (max-width: 999px){
+@media (min-width: 320px) and (max-width: 999px){
     .nav-menu{
         display: none;
     }

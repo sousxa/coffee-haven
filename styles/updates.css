@@ -79,7 +79,7 @@ input[type="email"]:focus, input[type="text"]:focus{
     }
 }
 
-@media (min-width: 375px) and (max-width: 999px){
+@media (min-width: 320px) and (max-width: 999px){
     .up-subtitle{
         width: 100%;
     }
@@ -98,7 +98,7 @@ input[type="email"]:focus, input[type="text"]:focus{
     }
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 320px) and (max-width: 700px){
 
     .updates{
         padding: var(--gp-48) var(--gp-16);
@@ -114,7 +114,7 @@ input[type="email"]:focus, input[type="text"]:focus{
     }
 }
 
-@media (min-width: 375px) and (max-width: 700px){
+@media (min-width: 320px) and (max-width: 700px){
     .up-title{
         font: var(--fsize-28);
         font-weight: 600;

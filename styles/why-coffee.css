@@ -83,7 +83,7 @@
       }
   }
 
-  @media (min-width: 375px) and (max-width: 700px){
+  @media (min-width: 320px) and (max-width: 700px){
     .why-coffee{
         padding: var(--gp-48) var(--gp-16);
     }
@@ -102,7 +102,7 @@
     }
   }
 
-  @media (min-width: 375px) and (max-width: 500px){
+  @media (min-width: 320px) and (max-width: 500px){
     .why-title{
         width: 100%;
         font: var(--fsize-28);

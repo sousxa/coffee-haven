@@ -54,7 +54,7 @@
     stroke-width: 2.5px;
 }
 
-@media (min-width: 375px) and (max-width: 999px){
+@media (min-width: 320px) and (max-width: 999px){
     .p-nav-menu{
         display: none;
     }
